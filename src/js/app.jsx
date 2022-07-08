@@ -53,8 +53,8 @@ export default class App extends Component {
         <input id= "interestRate" onChange={this.handleChange} name='interestRate' />
         <input id= "loanTerm" onChange={this.handleChange} name='loanTerm' />
         <select id="period" onChange={this.handleChange} name='period'>
-            <option value='12'>Monthly</option>
-            <option value='4'>Quarterly</option>
+            <option id="monthly" value='12'>Monthly</option>
+            <option id="quarterly" value='4'>Quarterly</option>
         </select>
         <button id='calculate' onClick={this.calculateMonthlyPayment}  >Calculate</button>
         <p id='output'></p>
